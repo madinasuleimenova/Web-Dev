@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Task19 What's the result of OR'ed alerts?</title>
+    </head>
+    <body>
+        <script>
+            let obj = {};
+
+            function A() { return obj; }
+            function B() { return obj; }
+
+            alert( new A() == new B() ); // true
+        </script>
+    </body>
+</html>

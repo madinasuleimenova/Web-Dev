@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Task31 Replace "for" with "while"</title>
+    </head>
+    <body>
+        <script>
+            function checkAge(age) {
+            if (age > 18) {
+                return true;
+            } else {
+                // ...
+                return confirm('Did parents allow you?');
+            }
+        }
+        function checkAge(age) {
+            if (age > 18) {
+                return true;
+            }
+            return confirm('Did parents allow you?');
+        }
+        // there is no difference
+        </script>
+    </body>
+</html>

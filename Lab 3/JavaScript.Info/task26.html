@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Task26 Check the login</title>
+    </head>
+    <body>
+        <script>
+            let login = prompt("Enter your login.", '');
+            if(login === '' || login ==  null){
+                alert('Canceled');
+            }else if(login == 'Admin'){
+                let password = prompt("Enter your password.", '');
+                if(password == 'TheMaster'){
+                    alert('Welcome!');
+                }else if(password === '' || password === null){
+                    alert('Canceled');
+                }else{
+                    alert('Wrong password!');
+                }
+            }else{
+                alert('I dont know you.');
+            }
+        </script>
+    </body>
+</html>

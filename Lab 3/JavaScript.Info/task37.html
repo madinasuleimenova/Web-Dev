@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Task19 What's the result of OR'ed alerts?</title>
+    </head>
+    <body>
+        <script>
+            function checkAge(age) {
+                return (age > 18) ? true : confirm('Did parents allow you?');
+            }
+            function checkAge2(age) {
+                return (age > 18) || confirm('Did parents allow you?');
+            }
+        </script>
+    </body>
+</html>

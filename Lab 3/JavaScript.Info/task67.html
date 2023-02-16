@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Task19 What's the result of OR'ed alerts?</title>
+    </head>
+    <body>
+        <script>
+            let arr = ["a", "b"];
+
+            arr.push(function() {
+                alert( this );
+            })
+
+            arr[2](); // a,b,function(){...}
+        </script>
+    </body>
+</html>
