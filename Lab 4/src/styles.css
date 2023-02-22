@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color:#a5cbef;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+app-root{
+    background-color: #3a6194;
+    font-size: larger;
+}
+
+p{
+    text-align: justify;
+}
