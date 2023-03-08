@@ -1,0 +1,11 @@
+<p>Photos</p>
+<ul *ngIf="loaded">
+  <li *ngFor="let photo of photos">
+    <!--    <a routerLink="/albums/{{album.id}}">{{album.id}}) {{album.title}}</a>-->
+    id:{{photo.id}}<br>
+    title:{{photo.title}}<br>
+    <!--      Photo(600):<img [src]="photo.url" alt="asd"><br>-->
+    Photo(150):<img [src]="photo.thumbnailUrl">
+  </li>
+</ul>
+<h4 *ngIf="!loaded">Loading albums ...</h4>

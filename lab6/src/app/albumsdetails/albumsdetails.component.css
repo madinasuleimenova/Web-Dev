@@ -1,0 +1,10 @@
+.delete{
+  background-image: url(https://github.com/DIas-code/Web_dev-2022/blob/main/lab3/img/Trash-alt-icon-vector-01.svg);
+  height: 100px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  float: right;
+}
