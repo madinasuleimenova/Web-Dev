@@ -1,0 +1,27 @@
+<main>
+  <div class="content">
+    <div class="companies_sidebar">
+      <div *ngFor="let company of companies" class="companies_sidebar--container">
+        <p (click)="getCompanyVacancies(company.id)">{{company.name}}</p>
+        <button (click)="toggleCompanyInfo(company.id)">Info</button>
+      </div>
+    </div>
+    <div class="vacancies">
+      <div *ngFor="let vacancy of vacancies" class="vacancies_container">
+        <div>
+          <p>{{vacancy.company.name}}</p>
+          <h1>{{vacancy.name}}</h1>
+          <p>{{vacancy.description}}</p>
+        </div>
+        <p>{{vacancy.salary}}</p>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="showCompanyInfo" class="companyInfo">
+    <h2>{{curCompany.name}}</h2>
+    <p>{{curCompany.description}}</p>
+    <p>City:{{curCompany.city}}</p>
+    <p>Address:{{curCompany.address}}</p>
+  </div>
+
+</main>

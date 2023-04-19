@@ -1,0 +1,2 @@
+from .class_company_views import Companies,OneCompany,GetCompanyVacancies
+from .func_vacancy_views import vacancy,vacancies,get_top_ten_vacancies
